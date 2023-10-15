@@ -1,0 +1,58 @@
+<html>
+<head>
+    <style>
+        body{
+    background-image: url('back.gif');
+    background-size: cover;
+}
+
+.filepond {
+    justify-content: center;
+            align-items: center;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .login-form {
+            width: 300px;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .login-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            background-color: #47ad4b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <form>
+            <input type="text" placeholder="Username" name="username" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <input type="file" 
+    class="filepond"
+    name="filepond"
+    accept="image/png, image/jpeg, image/gif"/>
+    
+</body>
+</html>
